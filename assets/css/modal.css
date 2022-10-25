@@ -1,0 +1,31 @@
+.card {
+    background: transparent;
+    border: transparent;
+}
+
+.card:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+.modal-header {
+    background: #e1e6eb;
+}
+
+.modal-title {
+    color: #212529;
+    font-weight: bold;
+}
+
+.modal-body {
+    color: #212529;
+    text-align: justify;
+}
+
+.modal-body p {
+    padding-top: 1rem;
+}
+
+.modal-footer {
+    background: #e1e6eb;
+}

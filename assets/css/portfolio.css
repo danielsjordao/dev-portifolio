@@ -1,0 +1,20 @@
+.tituloPortfolio {
+    color: #2C3E50 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 8vw;
+    text-transform: uppercase;
+}
+
+.container {
+    margin-top: 2em;
+}
+
+.card-img:hover {
+    transition: 800ms;
+}
+
+.btn {
+    padding: 0;
+}
