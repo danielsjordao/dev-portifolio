@@ -11,12 +11,14 @@
     box-shadow: black 0.1em 0.1em 0.2em;
     margin-top: 100px;
     width: 250px;
+    transition: all 0.3s ease;
 }
 
 .segundo-avatar {
     border-radius: 100%;
     box-shadow: black 0.1em 0.1em 0.2em;
     width: 250px;
+    transition: all 0.3s ease;
 }
 
 .titulo {
@@ -42,7 +44,6 @@
 
 .primeiro-avatar:hover,
 .segundo-avatar:hover {
-    transition: all 0.3s ease;
     transform: scale(1.2);
 }
 

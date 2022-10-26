@@ -1,11 +1,15 @@
 .card {
     background: transparent;
     border: transparent;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transition: all 0.3s ease;
     transform: scale(1.2);
+}
+
+.card-img {
+    border-radius: 10px;
 }
 
 .modal-header {
@@ -14,7 +18,14 @@
 
 .modal-title {
     color: #212529;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modal-body {
