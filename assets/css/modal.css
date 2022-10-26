@@ -1,0 +1,42 @@
+.card {
+    background: transparent;
+    border: transparent;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background: #e1e6eb;
+}
+
+.modal-title {
+    color: #212529;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-body {
+    color: #212529;
+    text-align: justify;
+}
+
+.modal-body p {
+    padding-top: 1rem;
+}
+
+.modal-footer {
+    background: #e1e6eb;
+}

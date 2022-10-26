@@ -1,48 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Portfolio</title>
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link href="./assets/css/reset.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DEVS Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/devicon.png" type="image/x-icon">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Biblioteca de ícones-->
+    <script src="https://kit.fontawesome.com/ce0680666c.js" crossorigin="anonymous"></script>
+    <!-- Arquivos CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navabar.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="stylesheet" href="assets/css/contatos.css">
+    <link rel="stylesheet" href="assets/css/copyright.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
 
-        <link href="./assets/css/logo.css" rel="stylesheet" />
-        <link href="./assets/css/cabecalho.css" rel="stylesheet" />
-        <link href="./assets/css/cabecalho/menu-item.css" rel="stylesheet" />
-        <link href="./assets/css/cabecalho/menu-link.css" rel="stylesheet" />
-        <link href="./assets/css/cabecalho/menu-lista.css" rel="stylesheet" />
+<body id="page-top">
+    <header>
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background-color: #2C3E50">
+            <div class="container-fluid">
+                <a class="navbar-brand textoNavBar" href="#page-top">Devs Front-End</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" style="color: #FFFFFF;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="" role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#FFFFFF"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link textoNavBar" href="#portfolio">Portfolio</a>
+                        <a class="nav-link textoNavBar" href="#sobre">Sobre</a>
+                        <a class="nav-link textoNavBar" href="#contato">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <link href="./assets/css/banner/banner.css" rel="stylesheet" />
-        <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet" />
-        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet" />
-        
-        <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
-        <link href="./assets/css/sobre/sobre-descricao.css" rel="stylesheet" />
-        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet" />
+    <main class="principal text-white text-center imagemFundo" style="background-color: #1ABC9C">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Imagem do primeiro Avatar-->
+            <img class="primeiro-avatar mb-5" src="assets/img/img_daniel/avatar-daniel.png" alt="Avatar do Daniel" />
+            <!-- Nome do primeiro DEV -->
+            <h1 class="titulo text-uppercase mb-0">Daniel Jordão</h1>
+            <!-- Ícone divisor-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-icon iconeDivisor"><i class="fas fa-code"></i></div>
+            </div>
+            <!-- Abaixo do nome do DEV-->
+            <p class="subtitulo font-weight-light mb-0">HTML - CSS - JavaScript</p>
+        </div>
+        <div class="container d-flex justify-content-around align-items-center flex-column">
+            <!-- Imagem do segundo Avatar-->
+            <img class="segundo-avatar mb-5" src="assets/img/img_jethro/avatar-jethro.png" alt="Avatar do Jethro" />
+            <!-- Nome do segundo DEV -->
+            <h1 class="titulo text-uppercase mb-0">Jethro Tiago</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-icon iconeDivisor"><i class="fas fa-code"></i></div>
+            </div>
+            <!-- Abaixo do nome do DEV-->
+            <p class="subtitulo font-weight-light mb-0">HTML - CSS - JavaScript</p>
+        </div>
+    </main>
 
-    </head>
-    <body>
-        <header class="cabecalho">
-            <img class="logo" alt="Portfolio" src="./assets/img/data-technology-logo.jpg">
-                <nav class="menu">
-                    <ul class="menu__lista">
-                        <li class="menu__item"><a class="menu__link ativo" href="index.html">Portfolio</a></li>                        
-                        <li class="menu__item"><a class="menu__link ativo" href="quemsomos.html">Quem Somos</a></li>
-                        <li class="menu__item"><a class="menu__link ativo" href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-        </header>
-        <section class="banner">
-            <div class="banner__imagem"></div>
-            <h2 class="banner__titulo">Portfolio Desenvolvedor Front-end</h2>
-            
+    <!-- Seção Portfolio-->
+    <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+            <!-- Título do portfolio-->
+            <h2 class="tituloPortfolio text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icone divisor-->
+            <div class="divider-custom divider-dark text-center">
+                <div class="divider-custom-icon iconeDivisor"><i class="fas fa-code"></i></div>
+            </div>
+            <div class="container">
+                <!-- Portfolio Itens Daniel-->
+                <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal1">
+                                <img src="assets/img/img_daniel/daniel-img01.png" class="card-img" alt="Projeto do Daniel">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal2">
+                                <img src="assets/img/img_daniel/daniel-img02.png" class="card-img" alt="Projeto do Daniel">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal3">
+                                <img src="assets/img/img_daniel/daniel-img03.png" class="card-img" alt="Projeto do Daniel">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Portfolio Itens Jethro-->
+                <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal4">
+                                <img src="assets/img/img_jethro/jethro-img01.jpg" class="card-img" alt="Projeto do Jethro">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal5">
+                                <img src="assets/img/img_jethro/jethro-img02.jpg" class="card-img" alt="Projeto do Jethro">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <button onclick="abreModal" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#janelaModal6">
+                                <img src="assets/img/img_jethro/jethro-img03.jpg" class="card-img" alt="Projeto do Jethro">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="page-section text-white mb-0 imagemFundoSobre" id="sobre" style="background-color: #026814">
+        <div class="container">
+            <!-- Título Sobre-->
+            <h2 class="titulo-sobre page-section-heading text-center text-uppercase text-white">Sobre</h2>
+            <!-- Ícone divisor-->
+            <div class="divider-custom divider-light text-center">
+                <div class="divider-custom-icon iconeDivisorSobre"><i class="fas fa-code"></i></div>
+            </div>
+            <!-- Conteudo da seção Sobre-->
+            <div class="row">
+                <div class="descricao col-lg-4 ms-auto descricaoSobre">
+                    <p class="lead"><strong>Daniel Jordão</strong> é Desenvolvedor Front-end (HTML, CSS e JavaScript) com background em
+                        Processos de Melhorias Estratégicas visando a experiência e necessidades dos clientes.</p>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/danielsjordao/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/dsjordao"><i class="fab fa-fw fa-github"></i></a>
+                </div>
+                <div class="descricao col-lg-4 me-auto">
+                    <p class="lead"><strong>Jethro Tiago</strong> é um desenvolvedor de Front-end em  crescimento constante, entusiasta da
+                        tecnologia, fascinado por este mundo infinito de códigos! Sempre disposto em aprender de tudo um
+                        pouco.</p>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jethrotiago/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/JethroTiago"><i class="fab fa-fw fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="page-section" id="contato" style="background-color: #FFFFFF">
+            <div class="container">
+                <!-- Cabeçalho do Contato-->
+                <h2 class="cabecalhoContato page-section-heading text-center text-uppercase text-secondary mb-0">Contato</h2>
+                <!-- Divisor de ícone-->
+                <div class="divider-custom text-center">
+                    <div class="divider-custom-icon iconeDivisorContato"><i class="fas fa-code"></i></div>
+                </div>
+                <!-- Formulário do Contato-->
+                <div class="row justify-content-center secaoContato">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Input de nome-->
+                            <div class="mb-3">
+                                <label for="name">Nome</label>
+                                <input type="text" placeholder="Seu nome completo aqui..." class="form-control" id="nome" required>
+                            </div>
+                            <!-- Input de Email-->
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" id="email" class="form-label">Email</label>
+                                <input type="email" placeholder="nome@exemplo.com" class="form-control" required>
+                                <div id="emailHelp" class="form-text">Deixe seu email para que possamos entrar em contato.</div>
+                              </div>
+                            <!-- Input de telefone-->
+                            <div class="mb-3">
+                                <label for="phone">Telefone para contato</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="(xx) 9xxxx-xxxx" minlength="11" pattern="^(\([0-9]{2}\))(\s)?([9]{1})?([0-9]{4})(\-)?([0-9]{4})$" required>
+                            </div>
+                            <!-- Input de mensagem-->
+                            <div class="mb-3">
+                                <label for="message">Mensagem</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Escreva algo pra gente!" style="height: 5rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Deixe a sua mensagem.</div>
+                            </div>
+                            <!-- Botão de Submit-->
+                            <button type="submit" class="btn btn-success" onclick="enviar()">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <section class="sobre">
-            <h2 class="sobre__titulo">Portfolio de Projetos</h2>
-            <p class="sobre__descricao">Veja os nossos projetos</p>
-        </section>
-    </body>
-</html>        
+            <!-- Seção de Copyright-->
+                <div class="copyright py-4 text-center text-white" style="background-color: #1A252F">
+                    <div class="container copyright"><small>Copyright &copy; DEVS PORTFOLIO 2022</small></div>
+                </div>
+
+        <!-- Portfolio Modal 1-->
+        <div id="janelaModal1" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">E-ShopBuy</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="#"><img src="assets/img/img_daniel/daniel-img01.png" class="card-img" alt="Projeto do Daniel"></a>
+                        <p>O projeto tem como objetivo o desenvolvimento de uma página front-end de e-commerce utilizando as linguagens
+                            HTML, CSS e JavaScript. E-ShopBuy é uma empresa comprometida com todos os públicos oferecendo 
+                            produtos de alta qualidade e com ótimos descontos. Aproveite o seu tempo e compre com a E-ShopBuy.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/dsjordao/E-ShopBuy" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div id="janelaModal2" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Cozinha Mediterrânea</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="#"><img src="assets/img/img_daniel/daniel-img02.png" class="card-img" alt="Projeto do Daniel"></a>
+                        <p>O projeto tem como objetivo desenvolver um website de culinária do Mediterrâneo.
+                            Foi utilizado na elaboração desse projeto as linguagens HTML e CSS, sendo que a
+                            estruturação CSS foi o foco deste projeto.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/dsjordao/Cozinha-Mediterranea" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div id="janelaModal3" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Rock Paper Scissors</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="http://rps-sage.vercel.app/"><img src="assets/img/img_daniel/daniel-img03.png" class="card-img" alt="Projeto do Daniel"></a>
+                        <p>Pedra, papel e tesoura é um excelente e empolgante jogo para descontrair e um
+                            desafio para desenvolver. Esse projeto aprimorou as habilidades em
+                            JavaScript, além de utilizar HTML e CSS.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/dsjordao/Rock-Paper-Scissors-Game" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div id="janelaModal4" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Gaby Bragança</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="http://gaby-braganca.vercel.app/"><img src="assets/img/img_jethro/jethro-img01.jpg" class="card-img" alt="Projeto do Jethro"></a>
+                        <p>Página Web desenvolvida para a Nutricionista e influencer baiana Gaby Bragança. Utilizado HTML e CSS</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/JethroTiago/gaby-braganca" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div id="janelaModal5" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Hand Game</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="http://project-hand-game-le5k.vercel.app/"><img src="assets/img/img_jethro/jethro-img02.jpg" class="card-img" alt="Projeto do Jethro"></a>
+                        <p>Uma página web desenvolvida para apreciadores de videogames portáteis. Criada com Bootstrap, utilizando técnicas responsivas avançadas.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/JethroTiago/project-hand-game" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div id="janelaModal6" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Mongo Drongo</h3>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="http://mongo-drongo.vercel.app/"><img src="assets/img/img_jethro/jethro-img03.jpg" class="card-img" alt="Projeto do Jethro"></a>
+                        <p>Um jogo da memória, criado com javascript, com os famosos personagens do desenho <a href="https://www.youtube.com/c/abluba">Mongo e Drongo - Abluba desenhos animados</a> - Sucesso no youtube!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://github.com/JethroTiago/mongo-drongo" target="_blank"><img src="./assets/img/github.png" alt="Link GitHub"></a>
+                        <!--<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="/assets/scripts/main.js"></script>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.cabecalhoContato {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    padding-top: 8vw;
+}
+
+label {
+    color: #2C3E50;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.iconeDivisorContato {
+    color: #2C3E50;
+    font-size: 25px;
+    margin: 2vw 0 3vw 0;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5vw;
+    padding: 15px 20px 15px 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #1ABC9C;
+}
+
+@media (max-width: 425px) {
+    .secaoContato {
+        padding: 10px;
+    }
+}

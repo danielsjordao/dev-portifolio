@@ -1,0 +1,54 @@
+.imagemFundo {
+    height: 100%;
+    background-image: url(/assets/img/devsBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.primeiro-avatar {
+    border-radius: 100%;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    margin-top: 100px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.segundo-avatar {
+    border-radius: 100%;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.subtitulo {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    padding: 10px 0 40px 0;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.iconeDivisor {
+    font-size: 25px;
+    margin-top: 5px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.primeiro-avatar:hover,
+.segundo-avatar:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 845px) {
+    .titulo {
+        font-size: 2.5em;
+    }
+}
